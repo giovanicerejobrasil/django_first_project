@@ -5,5 +5,10 @@ from django.http import HttpResponse
 
 
 def blog(request):
-    print('Function: my_view')
+    print('Function: blog')
     return HttpResponse("<h1><em>BLOG</em>: Hello, world!</h1>")
+
+
+def example(request):
+    print(request)
+    return HttpResponse("<h1><em>EXAMPLE</em>: Hello, world!</h1>")
