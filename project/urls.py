@@ -22,11 +22,18 @@ from django.http import HttpResponse
 # Django trabalha com MVT uma variação do MVC
 
 
+def home(request):
+    print('Function: home')
+    return HttpResponse("HOME: Bem vindo ao sistema!")
+
+
 def my_view(request):
-    return HttpResponse("Hello, world!")
+    print('Function: my_view')
+    return HttpResponse("BLOG: Hello, world!")
 
 
 urlpatterns = [
+    path('', home),
+    path('blog/', my_view),
     path('admin/', admin.site.urls),
-    path('blog/', my_view)
 ]
