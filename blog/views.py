@@ -4,8 +4,25 @@ from django.shortcuts import render
 
 
 def blog(request):
-    return render(request, "blog/index.html")
+    context = {
+        'text': 'BLOG: Hello, world!',
+        'title': 'BLOG - ',
+    }
+
+    return render(
+        request,
+        "blog/index.html",
+        context
+    )
 
 
 def example(request):
-    return render(request, "blog/example.html")
+    context = {
+        'text': 'EXAMPLE: Hello, world!',
+    }
+
+    return render(
+        request,
+        "blog/example.html",
+        context
+    )
