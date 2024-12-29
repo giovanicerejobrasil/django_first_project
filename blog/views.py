@@ -5,7 +5,7 @@ from django.shortcuts import render
 
 def blog(request):
     context = {
-        'text': 'BLOG: Hello, world!',
+        'content_title': 'BLOG: Hello, world!',
         'title': 'BLOG - ',
     }
 
@@ -18,7 +18,7 @@ def blog(request):
 
 def example(request):
     context = {
-        'text': 'EXAMPLE: Hello, world!',
+        'content_title': 'EXAMPLE: Hello, world!',
     }
 
     return render(

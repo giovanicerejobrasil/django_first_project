@@ -25,7 +25,21 @@ body {
 }
 
 .content {
+  margin: 0 auto;
+  max-width: 70dvw;
   padding: 3rem;
+}
+
+.content .home__title {
+  text-align: center;
+}
+
+.content .home__presentation {
+  color: var(--color-4);
+  text-align: justify;
+  padding: 2rem;
+  background-color: var(--color-3);
+  border-radius: 1rem;
 }
 
 .menu {
@@ -35,11 +49,11 @@ body {
 }
 
 .menu ul {
-  list-style-type: none;
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
   gap: 1rem;
+  list-style-type: none;
 }
 
 .menu a {

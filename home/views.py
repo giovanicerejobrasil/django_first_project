@@ -5,7 +5,7 @@ from django.shortcuts import render
 
 def home(request):
     context = {
-        'text': 'HOME: Hello, world!',
+        'content_title': 'HOME: Hello, world!',
         'title': 'HOME - ',
     }
 
