@@ -29,7 +29,11 @@ def post(request: HttpRequest, post_id: int):
             break
 
     if found_post is None:
-        raise Exception('Post não existe!')
+        # raise Http404('Post não existe!')
+        return render(
+            request,
+            'global/partials/404.html',
+        )
 
     context = {
         'title': f'BLOG - {found_post['title']}',
