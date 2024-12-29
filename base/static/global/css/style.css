@@ -15,7 +15,7 @@
 }
 
 html {
-  font-size: 63%;
+  font-size: 62.5%;
 }
 
 body {
@@ -25,16 +25,34 @@ body {
 }
 
 .content {
-  margin: 0 auto;
-  max-width: 70dvw;
-  padding: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1.5rem;
+  gap: 1.5rem;
 }
 
-.content .home__title {
+.posts {
+  display: grid;
+  gap: 2rem;
+}
+
+.post {
+  background-color: var(--color-4);
+  padding: 1.5rem;
+  box-shadow: 5px 2px 5px rgba(0, 0, 0, .15);
+}
+
+@media (min-width: 600px) {
+  .posts {
+    grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+  }
+}
+
+.home__title {
   text-align: center;
 }
 
-.content .home__presentation {
+.home__presentation {
   color: var(--color-4);
   text-align: justify;
   padding: 2rem;
