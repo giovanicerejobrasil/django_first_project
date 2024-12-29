@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  font-size: 2rem;
+  font-size: 1.6rem;
   background-color: var(--color-1);
   color: var(--color-2);
 }
@@ -33,7 +33,7 @@ body {
 
 .posts {
   display: grid;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .post {
@@ -48,14 +48,20 @@ body {
   }
 }
 
+.home__content {
+  width: 70dvw;
+  margin: 0 auto;
+}
+
 .home__title {
-  text-align: center;
+  margin: 1.5rem 0;
 }
 
 .home__presentation {
+  font-size: 2rem;
   color: var(--color-4);
   text-align: justify;
-  padding: 2rem;
+  padding: 3rem;
   background-color: var(--color-3);
   border-radius: 1rem;
 }
