@@ -1,0 +1,15 @@
+{% extends "global/base.html" %}
+
+{% load static %}
+
+{% block content %}
+  <div class="error">
+    <h1>404 Not Found</h1>
+
+    <img src="{% static "global/images/sleek.png" %}" alt="Error 404">
+
+    <p>A página que você procura não existe ou foi removida. :'(</p>
+
+    <a class="button" href="{% url "blog:blog" %}">Voltar</a>
+  </div>
+{% endblock content %}
