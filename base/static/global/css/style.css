@@ -25,6 +25,8 @@ body {
 }
 
 .content {
+  width: 60dvw;
+  margin: 0 auto;
   display: flex;
   flex-flow: column wrap;
   padding: 1.5rem;
@@ -42,8 +44,13 @@ body {
   box-shadow: 5px 2px 5px rgba(0, 0, 0, .15);
 }
 
-.post h2 {
+.post .post__title {
   margin-bottom: 1.5rem;
+}
+
+.post h2::first-letter,
+.post .post__body p::first-letter {
+  text-transform: capitalize;
 }
 
 .post h2 > a {
@@ -61,8 +68,30 @@ body {
   }
 }
 
+.single__post {
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+.single__post .post__title {
+  font-size: 5rem;
+  margin-bottom: 3rem;
+}
+
+.single__post .post__title::first-letter,
+.single__post .post__body p::first-letter {
+  text-transform: capitalize;
+}
+
+.single__post .post__body p {
+  font-size: 2rem;
+}
+
+.single__post .post__body p::first-letter {
+  font-size: 6rem;
+}
+
 .home__content {
-  width: 70dvw;
   margin: 0 auto;
 }
 
