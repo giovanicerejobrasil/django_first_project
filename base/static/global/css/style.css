@@ -42,6 +42,19 @@ body {
   box-shadow: 5px 2px 5px rgba(0, 0, 0, .15);
 }
 
+.post h2 {
+  margin-bottom: 1.5rem;
+}
+
+.post h2 > a {
+  text-decoration: none;
+  color: var(--color-2);
+}
+
+.post h2 > a:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 600px) {
   .posts {
     grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
